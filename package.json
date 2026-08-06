@@ -1,10 +1,10 @@
 {
-  "name": "envmcp",
+  "name": "@c-delouvencourt/mcp-env",
   "version": "0.2.1",
-  "description": "A lightweight way to use environment variables in your Cursor MCP server definitions.",
+  "description": "A lightweight way to use environment variables in your MCP server definitions.",
   "main": "dist/index.js",
   "bin": {
-    "envmcp": "dist/cli.js"
+    "mcp-env": "dist/cli.js"
   },
   "scripts": {
     "clean": "rimraf dist",
@@ -22,13 +22,16 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/griffithsbs/envmcp.git"
+    "url": "git+https://github.com/MeilleursBiens/mcp-env.git"
   },
-  "homepage": "https://github.com/griffithsbs/envmcp",
-  "author": "Ben Griffiths <benstephengriffiths@gmail.com>",
+  "homepage": "https://github.com/MeilleursBiens/mcp-env",
+  "author": "MeilleursBiens",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/griffithsbs/envmcp/issues"
+    "url": "https://github.com/MeilleursBiens/mcp-env/issues"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "devDependencies": {
     "@types/jest": "^29.5.12",

@@ -3,7 +3,7 @@
 import { loadEnvironmentVariablesFromFile, executeCommand } from './index';
 
 function printUsage() {
-  console.error('Usage: envmcp [--env-file <path>] <command> [args...]');
+  console.error('Usage: mcp-env [--env-file <path>] <command> [args...]');
   console.error('\nOptions:');
   console.error('  -e, --env-file <path>     Specify a custom path to the environment file');
   console.error('\nArguments:');

@@ -3,7 +3,7 @@ import fs from 'fs';
 import path from 'path';
 import os from 'os';
 
-describe('envmcp CLI', () => {
+describe('mcp-env CLI', () => {
   const defaultEnvFile = path.join(process.cwd(), '.env.mcp');
   const tempDir = fs.mkdtempSync(path.join(os.tmpdir(), 'envmcp-test-'));
   const customEnvFile = path.join(tempDir, 'custom.env.mcp');

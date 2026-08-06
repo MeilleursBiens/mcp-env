@@ -1,27 +1,27 @@
-# envmcp
-[![npm version](https://img.shields.io/npm/v/envmcp.svg)](https://www.npmjs.com/package/envmcp)
-[![total downloads](https://img.shields.io/npm/dt/envmcp.svg)](https://www.npmjs.com/package/envmcp)
+# mcp-env
+[![npm version](https://img.shields.io/npm/v/@c-delouvencourt/mcp-env.svg)](https://www.npmjs.com/package/@c-delouvencourt/mcp-env)
+[![total downloads](https://img.shields.io/npm/dt/@c-delouvencourt/mcp-env.svg)](https://www.npmjs.com/package/@c-delouvencourt/mcp-env)
 
-Use environment variables in your Cursor MCP server definitions.
+Use environment variables in your MCP server definitions.
 
-> **💡 Looking for more features?** Consider [mcpipe](https://github.com/griffithsbs/mcpipe) ([npm](https://www.npmjs.com/package/mcpipe)) which includes envmcp's functionality as well as debugging tools and other capabilities.
+> Fork of [envmcp](https://github.com/griffithsbs/envmcp) by Ben Griffiths.
 
 ## Quick Start
 
 ```bash
 # Use default ~/.env.mcp file
-npx envmcp your-mcp-server $DATABASE_URL
+npx @c-delouvencourt/mcp-env your-mcp-server $DATABASE_URL
 
 # Specify custom env file
-npx envmcp --env-file .env your-mcp-server $API_KEY $DATABASE_URL
+npx @c-delouvencourt/mcp-env --env-file .env your-mcp-server $API_KEY $DATABASE_URL
 
 # Short flag version
-npx envmcp -e /path/to/secrets.env your-mcp-server $MY_SECRET
+npx @c-delouvencourt/mcp-env -e /path/to/secrets.env your-mcp-server $MY_SECRET
 ```
 
 ## Usage in MCP Clients
 
-Prefix your server command with envmcp.
+Prefix your server command with mcp-env.
 
 _Before (secrets exposed in config)_: 
 ```json
@@ -37,7 +37,7 @@ _After (secrets in ~/.env.mcp)_:
 {
   "my_database": {
     "command": "npx",
-    "args": ["envmcp", "my-mcp-server", "$DATABASE_URL"]
+    "args": ["@c-delouvencourt/mcp-env", "my-mcp-server", "$DATABASE_URL"]
   }
 }
 ```
@@ -53,7 +53,7 @@ _After (secrets in ~/.env.mcp)_:
 ## Installation
 
 ```bash
-npm install -g envmcp
+npm install -g @c-delouvencourt/mcp-env
 ```
 
 ## Options
